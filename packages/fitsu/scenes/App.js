@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {LazyComponent} from 'root';
 
 class App extends Component {
   render() {
@@ -6,6 +7,7 @@ class App extends Component {
     return(
       <div>
         <h1>Whats gudddddd</h1>
+        <LazyComponent />
       </div>
     )
   }

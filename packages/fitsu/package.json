@@ -1,0 +1,31 @@
+{
+    "name": "fitsu",
+    "private": true,
+    "engineStrict": true,
+    "version": "1.0.0",
+    "engines": {
+        "npm": ">= 4.0.0",
+        "node": ">= 6.11"
+    },
+    "dependencies": {
+        "md5": "2.2.1",
+        "mobx": "3.3.1",
+        "mobx-react": "4.3.3",
+        "mobx-react-form": "1.31.16",
+        "moment": "2.19.1",
+        "react": "^16.4.1",
+        "react-router-dom": "4.2.2",
+        "styled-components": "^3.3.3"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --hot --mode development",
+        "start:api": "MOONBASE_PUBLIC_WS_URL=ws://localhost:3006 MOONBASE_PUBLIC_API_URL=http://localhost:3001 yarn start",
+        "start:prod": "MOONBASE_PUBLIC_OAUTH_CLIENT_ID=2d06b9a69c15e183856ff52c250281f6d93f9abef819921eac0d8647bb2b61f9 MOONBASE_PUBLIC_WS_URL=wss://ws-feed.pro.coinbase.com MOONBASE_PUBLIC_API_URL=https://api.pro.coinbase.com yarn start",
+        "start:dev": "MOONBASE_PUBLIC_OAUTH_CLIENT_ID=d6c2952a770ef48cb8f4ee5ecf444937b434f285c459b44a156d7648389434ed MOONBASE_PUBLIC_WS_URL=wss://ws-feed-pro-dev.cbhq.net MOONBASE_PUBLIC_API_URL=https://api-pro-dev.cbhq.net yarn start",
+        "start:staging": "MOONBASE_PUBLIC_OAUTH_CLIENT_ID=ca807a56b2679f813339950207bbc1a042330665756261dfeaed6e8e99c6b996 MOONBASE_PUBLIC_WS_URL=wss://ws-feed-pro-staging.cbhq.net MOONBASE_PUBLIC_API_URL=https://api-pro-staging.cbhq.net yarn start"
+    },
+    "peerDependencies": {
+        "react-dom": "^16.4.1",
+        "styled-components": "^3.3.3"
+    }
+}
